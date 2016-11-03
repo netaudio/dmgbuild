@@ -1,0 +1,9 @@
+{
+    "name": "com.kuick.meeting",
+    "description": "Chrome Native Messaging API KuickMeeting Host",
+    "path": "/Users/voipke/Library/KuickMeeting/KuickMeeting",
+    "type": "stdio",
+    "allowed_origins": [
+                        "chrome-extension://ibgpnhikmkblcolfmklkbcakhkgmleef/"
+                        ]
+}
