@@ -23,4 +23,10 @@ echo "crete dmg file"
 #cp version ./dmg/version
 version=`cat ./version`
 rm KuickMeetingInstaller_v$version.dmg
+mkdir -p KuickMeetingInstaller_v$version
+
+cp KuickMeeting KuickMeetingInstaller_v$version/
+cp version KuickMeetingInstaller_v$version/
+cp -R /Users/voipke/Library/Developer/Xcode/DerivedData/Installer-fpoclectrqkuujceecupbpmvsimj/Build/Products/Release/Installer.app.dSYM ./KuickMeetingInstaller_v$version/ 
+cp -R /Users/voipke/Library/Developer/Xcode/DerivedData/OSXvnc-abinkjaaxvmjkhbabbugxmdtyfhx/Build/Products/Development/OSXvnc-server.dSYM ./KuickMeetingInstaller_v$version/ 
 hdiutil create -format UDZO -srcfolder dmg  KuickMeetingInstaller_v$version.dmg
